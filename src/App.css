@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgba(255,255,255,0)
+}
+body{
+font-family: "Roboto" sans-serif;
+}
+nav{
+  z-index: 2;
+}
+.logo{
+  width: 8rem;
+}
+/***Menu Links***/
+
+nav a.nav-link{
+/* font-weight:500; */
+font-size: 0.8rem;
+letter-spacing:.0375rem;
+cursor:pointer
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul li{
+  text-transform:uppercase;
+}
+.navbar-nav > li> a{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top:0.18rem solid var(--primary-dark)
+}
+.navbar-brand{
+  max-width: 17.25rem;
+  padding:1 !important;
+  height: 6rem;
+
+}
+.navbar-nav>li>a.active:focus{
+  border-top:0.18rem solid var(--primary-orange)
+}
+.navbar-nav>li>a:hover{
+  border-top:0.18rem solid var(--primary-orange)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*****HEADER*****/
+.header-wrapper{
+  position: relative;
+  background: url(laptop-table-office-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height:90vh
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-info{
+  display:flex;
+  position :absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  flex-direction:column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family:"Roboto" sans-serif ;
+  line-height: 3rem;
 }
-
-.App-link {
-  color: #61dafb;
+.main-info h1{
+  color:#535756;
+  text-transform: uppercase; 
+  
 }
+.main-info h2{
+  color: var(--primary-orange);
+  /* text-transform: uppercase; */
+}
+/***Typed Text***/
+.typed-text{
+  font-size: 1rem;
+  color:#535756;
+  letter-spacing: 0em ;
+  /* text-transform: uppercase; */
+}
+/* ---Particles---- */
+.tsparticles-canvas-el{
+  position:absolute;
+  height:100vh;
+  width:100vh;
+  z-index:1;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:768px){
+  .particles-canvas{
+    display:none;
   }
 }
