@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../logo1.jpg"
-import "../App.css"
+ import logo from "./logo1.jpg"
+import "./Navbar.css"
 //REACT-FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ const Navbar = () =>{
   <nav className="navbar navbar-expand-lg navbar-light bg-dark">
 <div className="container">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo.."/></a>
+    <a className="navbar-brand" href="#"><img className="logo" src={logo}  alt="logo.."/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
      <FontAwesomeIcon icon={faBars} style={{color:"#fff"}}/>
     </button>

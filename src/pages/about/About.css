@@ -1,0 +1,19 @@
+  
+.about {
+    background-color: transparent;
+    font-size: 1.1em;
+  }
+  
+  .profile {
+    max-width: 18em;
+  }
+  
+  .my-details {
+    background-color: rgba(255, 255, 255, 0.747);
+  }
+  h1{  
+        color:#535756;
+        text-transform: uppercase; 
+        
+      
+  }

@@ -2,8 +2,13 @@
 import './App.css'
 import  "bootstrap/dist/css/bootstrap.min.css";
 import Particles from 'react-particles-js';
-import Navbar from './components/Navbar';
-import Header from "./components/Header";
+import Navbar from './components/Nav/Navbar';
+import Header from "./components/Header/Header";
+import About from './pages/about/About';
+import Fade from "react-reveal/Fade";
+import { Parallax } from "react-parallax";
+import parallex_image from './assets/images/parallax/parallex_img1.jpg'
+import Container from "react-bootstrap/Container";
 function App() {
   return (
     <div>
@@ -27,8 +32,24 @@ function App() {
       }
   }}
     />
-    <Navbar />
+    <Navbar/>
     <Header/>
+    <div>
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={parallex_image} 
+          bgImageAlt=""
+          strength={-200}
+        >
+            <Container className="container-box rounded">
+              <Fade duration={500}>
+                <About />
+              </Fade>
+            </Container>
+          
+        </Parallax>
+   
+      </div>
     
     </div>
  
