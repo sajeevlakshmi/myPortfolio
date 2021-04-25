@@ -13,9 +13,16 @@ import Skills from "./pages/skills/Skills";
 import Experience from "./pages/experience/Experience";
 // import Carousal from "./components/carousal/Carousal";
 
+ import { BrowserRouter as Router,Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import Contact from "./pages/contact/Contact";
+
 function App() {
   return (
     <div>
+    {/* <Router>
+      <Route path='/'component={}/>
+    </Router> */}
       <Particles
         className="particles-canvas"
         params={{
@@ -74,6 +81,11 @@ function App() {
           </Container>
         </Parallax>
       </div>
+      <div>
+        <Contact/>
+      </div>
+      <hr/>
+      <Footer/>
     </div>
   );
 }

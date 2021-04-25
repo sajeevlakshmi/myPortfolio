@@ -1,0 +1,13 @@
+#contact{
+  background-color: rgb(230, 232, 235)
+}
+.success-msg {
+    color: #57A773;
+    padding: 10px 15px;
+  }
+  
+  
+  .err-msg {
+    color: #EE6352;
+    padding: 10px 15px;
+  }

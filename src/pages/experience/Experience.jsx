@@ -11,7 +11,7 @@ const Experience = () => {
   let workIconStyles = { background: "white" };
   let schoolIconStyles = { background: "grey" };
   return (
-    <div>
+    <div id="experience">
       <h1 className="pt-3 text-center  pb-3">Experience</h1>
      <VerticalTimeline>
       { timelineElements.map(element=>{
