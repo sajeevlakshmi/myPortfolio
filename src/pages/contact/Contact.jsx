@@ -4,11 +4,14 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Axios from 'axios';
-
+import Card from "react-bootstrap/Card";
+import Axios from "axios";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Tilt from "react-tilt";
+import CallIcon from '@material-ui/icons/Call';
+import EmailIcon from '@material-ui/icons/Email';
 
 import "./Contact.css";
-
 
 export class Contact extends Component {
   constructor(props) {
@@ -20,68 +23,83 @@ export class Contact extends Component {
       disabled: false,
       emailSent: null,
     };
-   
   }
   handleChange = (event) => {
-      console.log(event.target.value)
+    console.log(event.target.value);
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
 
     this.setState({
-        [name]: value
-    })
-}
+      [name]: value,
+    });
+  };
 
-handleSubmit = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
 
     console.log(event.target);
 
     this.setState({
-        disabled: true
+      disabled: true,
     });
 
-
-Axios.post('http://localhost:3030/api/email', this.state)
-.then(res => {
-    if(res.data.success) {
-        this.setState({
+    Axios.post("http://localhost:3030/api/email", this.state)
+      .then((res) => {
+        if (res.data.success) {
+          this.setState({
             disabled: false,
-            emailSent: true
-        });
-    } else {
-        this.setState({
+            emailSent: true,
+          });
+        } else {
+          this.setState({
             disabled: false,
-            emailSent: false
+            emailSent: false,
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+
+        this.setState({
+          disabled: false,
+          emailSent: false,
         });
-    }
-})
-.catch(err => {
-    console.log(err);
-
-    this.setState({
-        disabled: false,
-        emailSent: false
-    });
-})
-
-}
+      });
+  };
   render() {
     return (
       <div className="pt-3 pb-3" id="contact">
         <h1 className="pt-3 text-center  pb-3">contact me</h1>
-        <hr/>
+        <hr />
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
-              <Col xs={12} md={4} className="align-items-start p-2 my-details rounded" >
-                
-               <h4>Address</h4>
-               <p>Mail: sajeev.lakshmi@gmail.com</p>  
-               <p>Phone: +91-9497040780</p>
-                 
-               </Col>
-               <Col xs={12} md={2} ></Col>
+          
+            <Col
+              xs={12}
+              md={4}
+              className="align-items-start p-2  rounded"
+            >
+              
+              <h4>Contact</h4>
+              <Card className="card-body rounded">
+                <Card.Body  >
+                  <div className=" align-items-start p-2">
+                    <p >Email</p>
+                    <p><EmailIcon/>sajeev.lakshmi@gmail.com</p>
+
+                  </div>
+                  <div  className="align-items-start p-2">
+                  <p >Phone</p>
+                    <p ><CallIcon/>+91-9497040780</p>
+                  </div>
+                  
+                </Card.Body>
+              </Card>
+             
+            </Col>
+          
+            <Col xs={12} md={2}></Col>
             <Col xs={12} md={6}>
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
@@ -124,11 +142,14 @@ Axios.post('http://localhost:3030/api/email', this.state)
                 >
                   Submit
                 </Button>
-                {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
+                {this.state.emailSent === true && (
+                  <p className="d-inline success-msg">Email Sent</p>
+                )}
+                {this.state.emailSent === false && (
+                  <p className="d-inline err-msg">Email Not Sent</p>
+                )}
               </Form>
             </Col>
-           
           </Row>
         </Container>
       </div>
@@ -137,3 +158,4 @@ Axios.post('http://localhost:3030/api/email', this.state)
 }
 
 export default Contact;
+// align-items-start p-2

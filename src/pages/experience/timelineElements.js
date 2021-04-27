@@ -6,7 +6,7 @@ let timelineElements = [
       description:
         "Web portal has been designed and developed following the MVC pattern. Spring framework is being used as a front-end solution. J2EE pattern and core java is being used on the middleware level . ",
       buttonText: "View Frontend Projects",
-      date: "August 2019 - November 2011",
+      date: "August 2009 - November 2011",
       icon: "work",
     },
     {
@@ -48,15 +48,7 @@ let timelineElements = [
       date: "2016 - 2018",
       icon: "school",
     },
-    {
-      id: 6,
-      title: "CrossRoads",
-      location: "India",
-      description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2020 - 2021",
-      icon: "school",
-    },
+   
   ];
   
   export default timelineElements;

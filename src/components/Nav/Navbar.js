@@ -1,5 +1,6 @@
 import React from 'react'
  import logo from "./logo1.jpg"
+ import {Link} from 'react-router-dom';
 import "./Navbar.css"
 //REACT-FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,22 +17,22 @@ const Navbar = () =>{
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <Link className="nav-link active" aria-current="page" to ="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#about">About Me</a>
+          <Link className="nav-link" to="/about">About Me</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#skills">Skills</a>
+          <Link className="nav-link" to="/skills">Skills</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#experience">Experience</a>
+          <Link className="nav-link" to="/experience">Experience</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
+          <Link className="nav-link" to="/project">Projects</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#contact">Contact Me</a>
+          <Link className="nav-link" to="/contact">Contact Me </Link>
         </li>
        
          </ul>

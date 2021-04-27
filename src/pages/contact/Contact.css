@@ -1,5 +1,15 @@
-#contact{
-  background-color: rgb(230, 232, 235)
+
+.card-body{
+  transition: transform 0.3s;
+}
+.card-body:hover{
+    
+  transform: scale(1.05);
+  background-color: #f9ab00;
+}
+
+p{
+  margin-bottom: 0px;
 }
 .success-msg {
     color: #57A773;

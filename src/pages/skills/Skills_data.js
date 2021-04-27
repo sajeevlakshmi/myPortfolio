@@ -20,12 +20,7 @@ export const skills={
             // imgSrc: L_JAVASCRIPT,
             skillName: "JavaScript",
           },
-          {
-            link: "https://sass-lang.com/",
-            imgAltText: "Sass",
-            // imgSrc: L_SASS,
-            skillName: "Sass",
-          },
+          
           {
             link: "https://getbootstrap.com/",
             imgAltText: "Bootstrap",
@@ -38,12 +33,12 @@ export const skills={
             // imgSrc: L_REACT,
             skillName: "React JS",
           },
-          {
-            link: "https://redux.js.org/",
-            imgAltText: "Redux",
-            // imgSrc: L_REDUX,
-            skillName: "Redux",
-          },
+          // {
+          //   link: "https://redux.js.org/",
+          //   imgAltText: "Redux",
+          //   // imgSrc: L_REDUX,
+          //   skillName: "Redux",
+          // },
           {
             link: "https://reacttraining.com/react-router/",
             imgAltText: "React Router",
@@ -113,12 +108,12 @@ export const skills={
             // imgSrc: L_JAVASCRIPT,
             skillName: "JavaScript",
           },
-          {
-            link: "https://www.typescriptlang.org/",
-            imgAltText: "TypeScript",
-            // imgSrc: L_TYPESCRIPT,
-            skillName: "TypeScript",
-          },
+          // {
+          //   link: "https://www.typescriptlang.org/",
+          //   imgAltText: "TypeScript",
+          //   // imgSrc: L_TYPESCRIPT,
+          //   skillName: "TypeScript",
+          // },
          
         
         ],
@@ -126,9 +121,9 @@ export const skills={
         
           {
             link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
-            imgAltText: "MS-SQL",
+            imgAltText: "My-SQL",
             // imgSrc: L_MSSQL,
-            skillName: "MS-SQL",
+            skillName: "My-SQL",
           },
           {
             link: "https://www.mongodb.com/",

@@ -1,0 +1,11 @@
+#projects{
+  background-color: rgb(230, 232, 235)
+}
+  .project_exp{
+      transition: transform 0.1s;
+  }
+  .project_exp:hover{
+    
+    transform: scale(1.05);
+  }
+  

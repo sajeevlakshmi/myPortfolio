@@ -13,17 +13,20 @@ import Skills from "./pages/skills/Skills";
 import Experience from "./pages/experience/Experience";
 // import Carousal from "./components/carousal/Carousal";
 
- import { BrowserRouter as Router,Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/Contact";
+import Project from "./pages/project/Project";
 
 function App() {
   return (
     <div>
-    {/* <Router>
-      <Route path='/'component={}/>
-    </Router> */}
-      <Particles
+      
+     
+
+      <Router>
+      <Navbar />
+      {/* <Particles
         className="particles-canvas"
         params={{
           particles: {
@@ -43,10 +46,8 @@ function App() {
             },
           },
         }}
-      />
-      <Navbar />
-      <Header />
-      <div>
+      /> */}
+        <Route path="/" exact component={Header} />
         <Parallax
           blur={{ min: -30, max: 30 }}
           bgImage={parallex_image}
@@ -55,19 +56,12 @@ function App() {
         >
           <Container className="container-box rounded">
             <Fade duration={500}>
-              <About />
+              <Route path="/about" exact component={About} />
             </Fade>
           </Container>
         </Parallax>
-      </div>
 
-      <div>
-      
-        <Skills />
-      
-      </div>
-
-      <div>
+        <Route path="/skills" component={Skills} />
         <Parallax
           blur={{ min: -30, max: 30 }}
           bgImage={parallex_image}
@@ -76,16 +70,28 @@ function App() {
         >
           <Container className="container-box rounded">
             <Fade duration={500}>
-              <Experience />
+              <Route path="/experience" component={Experience} />
             </Fade>
           </Container>
         </Parallax>
-      </div>
-      <div>
-        <Contact/>
-      </div>
-      <hr/>
-      <Footer/>
+        <Route path="/project" component={Project} />
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={parallex_image}
+          bgImageAlt=""
+          strength={-200}
+        >
+          <Container className="">
+            <Fade duration={500}>
+            <Route path="/contact" component={Contact} />
+            </Fade>
+          </Container>
+        </Parallax>
+       
+      </Router>
+
+      <hr />
+      <Footer />
     </div>
   );
 }

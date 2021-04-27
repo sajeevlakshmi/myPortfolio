@@ -32,8 +32,8 @@ app.post('/api/email', (req, res, next) => {
     sendGrid.setApiKey('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');
     const msg = {
         to: 'sajeev.lakshmi@gmail.com',
-        from: req.body.email,
-        subject: 'Website Contact',
+        from: 'lakshmipriya.sajeev@gmail.com',
+        subject: 'Portfolio Contact',
         text: req.body.message
     }
 

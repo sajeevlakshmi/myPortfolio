@@ -1,16 +1,19 @@
 
 #skills{
-  
-  background-color: #bea66d;
-  width:100%;
-   
+  position: relative;
+  background: url(../../assets/images/carousal/slide3.jpg);
+  background-size: cover;
+  background-position: center;
+    
 } 
 .focus {
+  
     transition: transform 0.3s;
   }
   
   .focus:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(20deg);
+    background-color: #f9ab00;
   }
   
   .card-title {
@@ -45,3 +48,4 @@
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
+ 

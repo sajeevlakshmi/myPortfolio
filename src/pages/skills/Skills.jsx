@@ -89,9 +89,9 @@ const Skills = () => {
               </Card.Body>
             </Card>
           </Col>
-
-          {/* Programming Languages */}
           <Col md={4}>
+          {/* Programming Languages */}
+          
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center  card-title">
