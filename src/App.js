@@ -47,7 +47,7 @@ function App() {
           },
         }}
       /> */}
-        <Route path="/" exact component={Header} />
+        <Route path="/" component={Header} exact={true} />
         <Parallax
           blur={{ min: -30, max: 30 }}
           bgImage={parallex_image}
