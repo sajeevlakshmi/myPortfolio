@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-particles-js";
 import Navbar from "./components/Nav/Navbar";
 
-import Header from "./components/Header/Header";
+
 import About from "./pages/about/About";
 import Fade from "react-reveal/Fade";
 import { Parallax } from "react-parallax";
@@ -14,6 +14,7 @@ import Experience from "./pages/experience/Experience";
 // import Carousal from "./components/carousal/Carousal";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
 import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/Contact";
 import Project from "./pages/project/Project";
