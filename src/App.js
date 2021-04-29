@@ -56,7 +56,7 @@ function App() {
         >
           <Container className="container-box rounded">
             <Fade duration={500}>
-              <Route path="/about" exact component={About} />
+              <Route path="/about" component={About} />
             </Fade>
           </Container>
         </Parallax>

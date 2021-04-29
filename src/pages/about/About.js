@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import './About.css';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom';
 import Profile from '../../assets/images/profile/DSC_0287 copy.JPG'
 
 const About = () => {
@@ -19,7 +20,7 @@ const About = () => {
                     {/* Profile picture */}
                    <Col xs={12} md={6}>
                    <Row className="justify-content-center mb-2 mr-2 ">
-                   <Image className="profile justify-content-end" alt="profile" src={Profile}  thumbnail fluid />
+                     <Image className="profile justify-content-end" alt="profile" src={Profile}  thumbnail fluid />
                    </Row>
                    </Col>
                    {/* About Me Description */}
@@ -38,11 +39,11 @@ const About = () => {
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>
-                    <a href="#contact">
+                    <Link to="/contact">
                       <Button className="m-2" variant="outline-primary">
                         Let's talk
                       </Button>
-                    </a>
+                      </Link>
                   </div>
                   <div>
                     <a href="https://drive.google.com/file/d/1EjiJqy4rPSefvefdBOIKRUsP2AeZjOYE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
