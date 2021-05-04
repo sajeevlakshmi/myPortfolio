@@ -13,7 +13,7 @@ import Skills from "./pages/skills/Skills";
 import Experience from "./pages/experience/Experience";
 // import Carousal from "./components/carousal/Carousal";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/footer/Footer";
 import Contact from "./pages/contact/Contact";
@@ -25,7 +25,7 @@ function App() {
       
      
 
-      <Router>
+      <Router basename='/'>
       <Navbar />
       {/* <Particles
         className="particles-canvas"
