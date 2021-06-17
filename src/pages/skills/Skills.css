@@ -12,7 +12,7 @@
   }
   
   .focus:hover {
-    transform: scale(1.05) rotate(20deg);
+    transform: scale(1.05) ;
     background-color: #f9ab00;
   }
   

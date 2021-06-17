@@ -18,8 +18,8 @@ const About = () => {
                 <Row className="pt-3 pb-5 align-items-center">
            
                     {/* Profile picture */}
-                   <Col xs={12} md={6}>
-                   <Row className="justify-content-center mb-2 mr-2 ">
+                   <Col xs={12} md={6} >
+                   <Row className="justify-content-center mb-2  ">
                      <Image className="profile justify-content-end" alt="profile" src={Profile}  thumbnail fluid />
                    </Row>
                    </Col>
@@ -32,22 +32,21 @@ const About = () => {
                 <br />
                 In 2008, I successfully completed my Engineering with specialization in 'Computer Science and Engineering'.
                 <br />
-                Working with the clients, my goal is always driven towards providing amazing experience with the best level of quality and service to them.
-                <br />
-                Along with that, I also help students as a Tutor on their journey of becoming a professional programmer. 
+                I have a steady source of motivation that drives me to do my best. 
+              
                 <br />I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
-                  <div>
+                  {/* <div>
                     <Link to="/contact">
                       <Button className="m-2" variant="outline-primary">
                         Let's talk
                       </Button>
                       </Link>
-                  </div>
+                  </div> */}
                   <div>
                     <a href="https://drive.google.com/file/d/1EjiJqy4rPSefvefdBOIKRUsP2AeZjOYE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-success">
+                      <Button className="m-2" variant="outline-info">
                         My Resume
                       </Button>
                     </a>
@@ -60,11 +59,11 @@ const About = () => {
                     </a>
                   </div>
                   <div>
-                    <a href="https://www.linkedin.com/in/lakshmi-priya-8aa49a79/" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://www.linkedin.com/in/lakshmi-priya-8aa49a79/" target="_blank" rel="noopener noreferrer">
                       <Button className="m-2" variant="outline-info">
                         LinkedIn
                       </Button>
-                    </a>
+                    </a> */}
                   </div>
                 </Col>
                        </Row>

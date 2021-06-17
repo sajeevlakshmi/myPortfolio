@@ -5,9 +5,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Axios from "axios";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Tilt from "react-tilt";
+import emailjs from "emailjs-com";
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
 
@@ -35,37 +33,22 @@ export class Contact extends Component {
     });
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
+  handleSubmit = (e) => {
+    e.preventDefault();
 
-    console.log(event.target);
-
-    this.setState({
-      disabled: true,
-    });
-
-    Axios.post("http://localhost:3030/api/email", this.state)
-      .then((res) => {
-        if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true,
-          });
-        } else {
-          this.setState({
-            disabled: false,
-            emailSent: false,
-          });
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-
-        this.setState({
-          disabled: false,
-          emailSent: false,
-        });
+    emailjs.sendForm('service_uk8ofpj', 'template_3kcl8ej', e.target,'user_7h7pWHUQYHKqorqxqs6uX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
       });
+      this.setState({
+        name: "",
+        email: "",
+        message: ""
+      });
+     alert("Message sent successfully")
+   
   };
   render() {
     return (
@@ -91,7 +74,7 @@ export class Contact extends Component {
                   </div>
                   <div  className="align-items-start p-2">
                   <p >Phone</p>
-                    <p ><CallIcon/>+91-9497040780</p>
+                    <p ><CallIcon/>+971-552850158</p>
                   </div>
                   
                 </Card.Body>
@@ -137,17 +120,12 @@ export class Contact extends Component {
                 </Form.Group>
                 <Button
                   className="d-inline-block"
-                  variant="warning"
+                  variant="dark"
                   type="submit"
                 >
                   Submit
                 </Button>
-                {this.state.emailSent === true && (
-                  <p className="d-inline success-msg">Email Sent</p>
-                )}
-                {this.state.emailSent === false && (
-                  <p className="d-inline err-msg">Email Not Sent</p>
-                )}
+                
               </Form>
             </Col>
           </Row>

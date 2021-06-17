@@ -1,23 +1,14 @@
 
 .card-body{
   transition: transform 0.3s;
+  
 }
 .card-body:hover{
     
   transform: scale(1.05);
-  background-color: #f9ab00;
+  background-color: #6c757d;
 }
 
 p{
   margin-bottom: 0px;
 }
-.success-msg {
-    color: #57A773;
-    padding: 10px 15px;
-  }
-  
-  
-  .err-msg {
-    color: #EE6352;
-    padding: 10px 15px;
-  }
