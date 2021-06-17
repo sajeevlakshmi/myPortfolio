@@ -92,7 +92,7 @@ export class Contact extends Component {
                     name="name"
                     type="text"
                     value={this.state.name}
-                    onChange={this.handleChange}
+                    onChange={this.handleChange} required
                   />
                 </Form.Group>
 
@@ -103,7 +103,7 @@ export class Contact extends Component {
                     name="email"
                     type="email"
                     value={this.state.email}
-                    onChange={this.handleChange}
+                    onChange={this.handleChange} required
                   />
                 </Form.Group>
 
@@ -115,7 +115,7 @@ export class Contact extends Component {
                     as="textarea"
                     rows="3"
                     value={this.state.message}
-                    onChange={this.handleChange}
+                    onChange={this.handleChange} required
                   />
                 </Form.Group>
                 <Button
