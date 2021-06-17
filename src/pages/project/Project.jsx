@@ -111,7 +111,7 @@ const Project = () => {
                   </Button>
                 </a>
                 <a
-                  href="https://tastycakecorner.herokuapp.com// "
+                  href="https://tastycakecorner.herokuapp.com/ "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
