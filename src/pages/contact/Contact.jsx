@@ -8,6 +8,7 @@ import Card from "react-bootstrap/Card";
 import emailjs from "emailjs-com";
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
+import swal from 'sweetalert';
 
 import "./Contact.css";
 
@@ -47,7 +48,11 @@ export class Contact extends Component {
         email: "",
         message: ""
       });
-     alert("Message sent successfully")
+      swal({
+        title: "",
+        text: "Message sent successfully!",
+        icon: "success",
+      });
    
   };
   render() {
@@ -74,7 +79,9 @@ export class Contact extends Component {
                   </div>
                   <div  className="align-items-start p-2">
                   <p >Phone</p>
-                    <p ><CallIcon/>+971-552850158</p>
+                    <p ><CallIcon/>+971-552850158 </p>
+                    <p> +91-9497040780</p>
+                    
                   </div>
                   
                 </Card.Body>

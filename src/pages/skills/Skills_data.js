@@ -100,6 +100,12 @@ export const skills={
             // imgSrc: L_GITHUB_PAGES,
             skillName: "GitHub Pages",
           },
+          {
+            link: "https://firebase.google.com//",
+            imgAltText: "FireBase",
+            // imgSrc: L_GITHUB_PAGES,
+            skillName: "Firebase",
+          },
     ],
     programmingLanguages:[
         {

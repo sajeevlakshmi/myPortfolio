@@ -15,7 +15,8 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 
 import classphoto from "../../assets/images/classroom/fontpage.jfif";
 import ecommerce from "../../assets/images/ecommerce/cake_website_photo.png";
-import netflix from "../../assets/images/ecommerce/netflix-image.png"
+import netflix from "../../assets/images/ecommerce/netflix-image.png";
+import todo from '../../assets/images/ecommerce/todo.png'
 import "./Project.css";
 
 const useStyles = makeStyles({
@@ -61,7 +62,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                    <GitHubIcon/>
+                    <GitHubIcon/>Git Hub
                   </Button>
                 </a>
                 <a
@@ -70,7 +71,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                  <VisibilityIcon/>
+                  <VisibilityIcon/>View Site
                   </Button>
                 </a>
               </CardActions>
@@ -107,7 +108,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                  <GitHubIcon/>
+                  <GitHubIcon/>Git Hub
                   </Button>
                 </a>
                 <a
@@ -116,7 +117,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                    <VisibilityIcon/>
+                    <VisibilityIcon/>View Site
                   </Button>
                 </a>
               </CardActions>
@@ -155,7 +156,7 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                    <GitHubIcon/>
+                    <GitHubIcon/>Git Hub
                   </Button>
                 </a>
                 <a
@@ -164,7 +165,53 @@ const Project = () => {
                   rel="noopener noreferrer"
                 >
                   <Button size="small" color="dark">
-                  <VisibilityIcon/>
+                  <VisibilityIcon/>View Site
+                  </Button>
+                </a>
+              </CardActions>
+            </Card>
+          </Col>
+          <Col xs={10} md={5} className="mb-3">
+            <Card className="project_exp">
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={todo}
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Todo-App
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    {/* In the Covid-19 pandemic situation, it is difficult for
+                    Tutors to manage the students. So I would like to make a
+                    Classroom Management System that manages the student’s
+                    attendance, assignments, seminars, and exams online. */}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <a
+                  href="https://github.com/sajeevlakshmi/todo-app.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="small" color="dark">
+                    <GitHubIcon/>Git Hub
+                  </Button>
+                </a>
+                <a
+                  href="https://todo-app-cc7d5.web.app/ "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="small" color="dark">
+                  <VisibilityIcon/>View Site
                   </Button>
                 </a>
               </CardActions>
