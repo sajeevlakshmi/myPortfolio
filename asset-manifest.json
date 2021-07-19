@@ -1,32 +1,33 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.ada70724.chunk.css",
-    "main.js": "/myPortfolio/static/js/main.ab636a49.chunk.js",
-    "main.js.map": "/myPortfolio/static/js/main.ab636a49.chunk.js.map",
-    "runtime-main.js": "/myPortfolio/static/js/runtime-main.55c4b0b6.js",
-    "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.55c4b0b6.js.map",
+    "main.js": "/myPortfolio/static/js/main.66f8dd5d.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.66f8dd5d.chunk.js.map",
+    "runtime-main.js": "/myPortfolio/static/js/runtime-main.09a1ae56.js",
+    "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.09a1ae56.js.map",
     "static/css/2.489a6532.chunk.css": "/myPortfolio/static/css/2.489a6532.chunk.css",
-    "static/js/2.fa2fb210.chunk.js": "/myPortfolio/static/js/2.fa2fb210.chunk.js",
-    "static/js/2.fa2fb210.chunk.js.map": "/myPortfolio/static/js/2.fa2fb210.chunk.js.map",
-    "static/js/3.cdb99352.chunk.js": "/myPortfolio/static/js/3.cdb99352.chunk.js",
-    "static/js/3.cdb99352.chunk.js.map": "/myPortfolio/static/js/3.cdb99352.chunk.js.map",
+    "static/js/2.e2e602e9.chunk.js": "/myPortfolio/static/js/2.e2e602e9.chunk.js",
+    "static/js/2.e2e602e9.chunk.js.map": "/myPortfolio/static/js/2.e2e602e9.chunk.js.map",
+    "static/js/3.2b17bc00.chunk.js": "/myPortfolio/static/js/3.2b17bc00.chunk.js",
+    "static/js/3.2b17bc00.chunk.js.map": "/myPortfolio/static/js/3.2b17bc00.chunk.js.map",
     "index.html": "/myPortfolio/index.html",
     "static/css/2.489a6532.chunk.css.map": "/myPortfolio/static/css/2.489a6532.chunk.css.map",
     "static/css/main.ada70724.chunk.css.map": "/myPortfolio/static/css/main.ada70724.chunk.css.map",
-    "static/js/2.fa2fb210.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.fa2fb210.chunk.js.LICENSE.txt",
+    "static/js/2.e2e602e9.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.e2e602e9.chunk.js.LICENSE.txt",
     "static/media/DSC_0287 copy.c3eb9258.JPG": "/myPortfolio/static/media/DSC_0287 copy.c3eb9258.JPG",
     "static/media/cake_website_photo.bf6c95b7.png": "/myPortfolio/static/media/cake_website_photo.bf6c95b7.png",
     "static/media/fontpage.756d47cf.jfif": "/myPortfolio/static/media/fontpage.756d47cf.jfif",
     "static/media/App.css": "/myPortfolio/static/media/laptop-table-office-background.aa456c92.jpg",
     "static/media/netflix-image.de45e0cc.png": "/myPortfolio/static/media/netflix-image.de45e0cc.png",
     "static/media/parallex_img1.f272d7a6.jpg": "/myPortfolio/static/media/parallex_img1.f272d7a6.jpg",
-    "static/media/Skills.css": "/myPortfolio/static/media/slide3.8eb7805b.jpg"
+    "static/media/Skills.css": "/myPortfolio/static/media/slide3.8eb7805b.jpg",
+    "static/media/todo.dcfef069.png": "/myPortfolio/static/media/todo.dcfef069.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.55c4b0b6.js",
+    "static/js/runtime-main.09a1ae56.js",
     "static/css/2.489a6532.chunk.css",
-    "static/js/2.fa2fb210.chunk.js",
+    "static/js/2.e2e602e9.chunk.js",
     "static/css/main.ada70724.chunk.css",
-    "static/js/main.ab636a49.chunk.js"
+    "static/js/main.66f8dd5d.chunk.js"
   ]
 }
