@@ -4,7 +4,7 @@ let timelineElements = [
       title: "Software Engineer",
       location: "Accenture Service Pvt. Ltd, India",
       description:
-        "Web portal has been designed and developed following the MVC pattern. Spring framework is being used as a front-end solution. J2EE pattern and core java is being used on the middleware level . ",
+        "Web portal has been designed and developed following the MVC pattern. Spring framework is being used . J2EE pattern and core java is being used  ",
       buttonText: "View Frontend Projects",
       date: "August 2009 - November 2011",
       icon: "work",
